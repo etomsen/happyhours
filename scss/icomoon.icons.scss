@@ -1,0 +1,71 @@
+// icomoon Variables
+// --------------------------
+
+
+$icomoon-font-path: "../fonts" !default;
+$icomoon-font-family: "icomoon" !default;
+$icomoon-prefix: icomoon- !default;
+
+$icomoon-icons-medicine-12: "\e600";
+$icomoon-icons-medicine-24: "\e600";
+$icomoon-icons-medicine-14: "\e601";
+$icomoon-icons-medicine-34: "\e602";
+$icomoon-icons-medicine-empty: "\e603";
+$icomoon-icons-medicine-full: "\e604";
+
+
+// icomoon Font Path
+// --------------------------
+
+@font-face {
+    font-family: $icomoon-font-family;
+    src:url("#{$icomoon-font-path}/icomoon.eot?arr7r6");
+    src:url("#{$icomoon-font-path}/icomoon.eot?#iefixarr7r6") format("embedded-opentype"),
+    url("#{$icomoon-font-path}/icomoon.ttf?arr7r6") format("truetype"),
+    url("#{$icomoon-font-path}/icomoon.woff?arr7r6") format("woff"),
+    url("#{$icomoon-font-path}/icomoon.svg?arr7r6#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon-icomoon {
+  display: inline-block;
+  font-family: $icomoon-font-family;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+// icomoon Icons
+// --------------------------
+
+.icomoon,
+.#{$icomoon-prefix}medicine-12:before,
+.#{$icomoon-prefix}medicine-24:before,
+.#{$icomoon-prefix}medicine-14:before,
+.#{$icomoon-prefix}medicine-34:before,
+.#{$icomoon-prefix}medicine-empty:before,
+.#{$icomoon-prefix}medicine-full:before
+{
+    @extend .icon-icomoon;
+}
+.#{$icomoon-prefix}medicine-12:before {content: $icomoon-icons-medicine-12;}
+.#{$icomoon-prefix}medicine-24:before {content: $icomoon-icons-medicine-12;}
+.#{$icomoon-prefix}medicine-14:before {content: $icomoon-icons-medicine-14;}
+.#{$icomoon-prefix}medicine-34:before {content: $icomoon-icons-medicine-34;}
+.#{$icomoon-prefix}medicine-empty:before {content: $icomoon-icons-medicine-empty;}
+.#{$icomoon-prefix}medicine-full:before {content: $icomoon-icons-medicine-full;}
+
+
+
+
+
+
+

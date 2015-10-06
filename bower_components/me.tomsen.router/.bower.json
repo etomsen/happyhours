@@ -1,0 +1,39 @@
+{
+  "name": "me.tomsen.router",
+  "description": "router for AngularJS",
+  "main": [
+    "router.module.js",
+    "routerHelper.provider.js"
+  ],
+  "keywords": [
+    "tomsen.me",
+    "router",
+    "angular"
+  ],
+  "authors": [
+    "Evgeny Tomsen"
+  ],
+  "license": "MIT",
+  "homepage": "www.router.tomsen.me",
+  "dependencies": {
+    "angular": "~1.3.0"
+  },
+  "overrides": {},
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "07fb28b6f6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "07fb28b6f60156ab6c2165b1421c73215f7df65f"
+  },
+  "_source": "https://github.com/etomsen/router.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/etomsen/router.git",
+  "_direct": true
+}

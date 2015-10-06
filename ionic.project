@@ -1,0 +1,9 @@
+{
+  "name": "happyhours",
+  "app_id": "c8a41aaa",
+  "gulpStartupTasks": [
+    "sass",
+    "index",
+    "watch"
+  ]
+}

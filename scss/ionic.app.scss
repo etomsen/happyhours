@@ -1,0 +1,154 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+$positive: #2db051 !default;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../fonts" !default;
+@import "bower_components/ionic/scss/ionic";
+
+
+// ionic-material
+@import "ionic-material/bar-header-expanded.scss";
+@import "ionic-material/bar.scss";
+@import "ionic-material/button-bar.scss";
+@import "ionic-material/button-fab.scss";
+@import "ionic-material/button-floating.scss";
+@import "ionic-material/button.scss";
+@import "ionic-material/card.scss";
+@import "ionic-material/hero.scss";
+@import "ionic-material/item.scss";
+@import "ionic-material/list.scss";
+@import "ionic-material/loading.scss";
+@import "ionic-material/mask.scss";
+@import "ionic-material/menu.scss";
+@import "ionic-material/motion-elements.scss";
+
+
+// overrides
+@import "overrides/ink.scss";
+@import "overrides/ionic.scss";
+
+.card .list .item {
+	border-width: 1px;
+ 	border-style: solid;
+ 	border-color: $divider;
+}
+
+
+.card.material > .item {
+	background: inherit;
+	border: none;
+	margin: 0;
+}
+
+.list .item-input-inset {
+    border: 1px solid $calm !important;
+    padding: 0 !important;
+    margin: 16px 0 !important;
+}
+
+.list .item-input-inset > .item.item-input-wrapper,
+.list .item-input-inset > .item.item-input {
+    border-radius: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.list .item-input-inset > .item > input {
+    color: $positive !important;
+}
+
+// .list .item-input-inset > .item >
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+    color: $secondary-text;
+    font-weight: 200;
+}
+
+.list .item-input-positive {
+    border-color: $positive !important;
+}
+
+.list .item-input-assertive {
+    border-color: $assertive !important;
+}
+
+.list .item-input-energized {
+    border-color: $energized !important;
+}
+
+.list .item-input-inset > .button {
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-shadow: !important;
+}
+
+
+.bar.bar-header.positive-bg > h1,
+.bar.bar-header.positive-bg > h2,
+.bar.bar-header.positive-bg > h3,
+.bar.bar-header.positive-bg > h4,
+.bar.bar-header.positive-bg > p{
+    font-weight: normal !important;
+    color: #fff !important;
+}
+
+input {
+    color: $positive !important;
+}
+
+input[type="search"] {
+    color: $secondary-text !important;
+}
+
+input[type="number"]:read-only {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+}
+
+input[type="text"]:read-only {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+}
+
+
+.color-positive {
+    color: $positive !important;
+}
+
+.color-assertive {
+    color: $assertive !important;
+}
+
+.color-calm {
+    color: $calm !important;
+}
+
+.text-transform-first-capital {
+    text-transform: lowercase;
+}
+
+.text-transform-first-capital::first-letter {
+    text-transform: uppercase;
+}
+
