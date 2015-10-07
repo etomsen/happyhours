@@ -112,7 +112,7 @@ a { cursor: pointer; }
 .tabs .tab-item .badge.badge-positive,
 .badge.badge-positive,
 .tabs-striped.tabs-background-positive .tabs {
-    background-color: #308fbd;
+    background-color: #2db051;
     color: #fff;
 }
 .positive-900-bg,
@@ -214,9 +214,8 @@ a { cursor: pointer; }
 .tabs .tab-item .badge.badge-calm,
 .badge.badge-calm,
 .tabs-striped.tabs-background-calm .tabs {
-  background-color: #478fcc;
-  // background-color: #2196F3;
-    color: #fff;
+  background-color: #fff;
+  color: #2db051;
 }
 .calm-900-bg,
 .button-calm-900,
@@ -774,7 +773,7 @@ a { cursor: pointer; }
 .positive:active,
 .positive:active *,
 *.positive:active {
-    color: #3F51B5;
+    color: #2db051;
 }
 .positive-900,
 .positive-900 *,
@@ -1066,7 +1065,7 @@ a { cursor: pointer; }
 }
 
 .bar .button.button-clear {
-    color: #fff;
+    // color: #fff;
 }
 
 .bar .button.button-icon .icon:before,

@@ -5,9 +5,9 @@
 		.controller('Main', Main);
 
 		Main.$inject = [
-			'$rootScope', '$state', '$scope', '$ionicHistory', '$ionicSideMenuDelegate', '$ionicLoading', '$timeout'];
+			'$rootScope', '$state', '$scope', '$ionicHistory', '$ionicTopMenuDelegate', '$ionicLoading', '$timeout'];
 
-		function Main($rootScope, $state, $scope, $ionicHistory, $ionicSideMenuDelegate, $ionicLoading, $timeout) {
+		function Main($rootScope, $state, $scope, $ionicHistory, $ionicTopMenuDelegate, $ionicLoading, $timeout) {
 
 			var history = [];
 			$scope.data = {

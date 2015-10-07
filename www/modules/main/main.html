@@ -1,9 +1,9 @@
-<ion-side-menus enable-menu-with-back-views="true">
-	<ion-side-menu-content>
-		<ion-nav-bar class="positive-bg" align-title="center" ng-class="{'has-tabs-top': data.hasTabsTop}">
+<ion-top-menus enable-menu-with-back-views="true">
+	<ion-top-menu-content>
+		<ion-nav-bar class="bar-positive" align-title="center" ng-class="{'has-tabs-top': data.hasTabsTop}">
 			<ion-nav-buttons side="left">
 				<button ng-show='data.showBackBtn' class="button button-icon button-clear ion-chevron-left" ng-click="goBack()"></button>
-				<button ng-show='data.showMainMenuBtn' class="button button-icon button-clear ion-navicon" menu-toggle="left" ng-click="toggleLeft()"></button>
+				<button ng-show='data.showMainMenuBtn' class="button button-icon button-clear ion-navicon" top-menu-toggle="top" ng-click="toggleLeft()"></button>
 			</ion-nav-buttons>
 			<ion-nav-buttons side="right">
 				<button ng-if="data.buttons.length > 0" class="button button-icon button-clear" ng-class="data.buttons[0].iconClass" ng-click="navbarButtonClick(data.buttons[0])"></button>
@@ -13,20 +13,18 @@
 
 		</ion-nav-bar>
 		<ion-nav-view name="mainContent"></ion-nav-view>
-	</ion-side-menu-content>
+	</ion-top-menu-content>
 
-	<ion-side-menu side="left">
-		<ion-header-bar class="positive-bg">
-        </ion-header-bar>
-		<ion-content class="has-header">
+	<ion-top-menu side="top">
+		<ion-content class="positive-bg">
 			<ion-list>
-				<ion-item nav-clear menu-close href="#/main/map">
+				<ion-item nav-clear top-menu-close href="#/main/map">
 					Map
 				</ion-item>
-				<ion-item nav-clear menu-close href="#/main/list">
+				<ion-item nav-clear top-menu-close href="#/main/list">
 					List
 				</ion-item>
 			</ion-list>
 		</ion-content>
-	</ion-side-menu>
-</ion-side-menus>
+	</ion-top-menu>
+</ion-top-menus>

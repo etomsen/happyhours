@@ -50,9 +50,9 @@
 		$scope.centerMap = function() {
 
 			var location =  {
-				name : 'Washington D.C., USA',
-				lat : 38.8951100,
-				lng : -77.0363700
+				name : 'Минск, Беларусь',
+				lat : 53.9000,
+				lng : 27.5667
 			};
 
 			$scope.map.center  = {

@@ -15,11 +15,23 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+$text: #FFFFFF;
+$primary-text: #212121;
+$secondary-text: #727272;
+$divider: #B6B6B6;
+$calm:  #f8f8f8 !default;
 $positive: #2db051 !default;
+$divider: #B6B6B6;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../fonts" !default;
 @import "bower_components/ionic/scss/ionic";
+
+
+// helpers
+@import "helpers/utilities.scss";
+@import "helpers/colors.scss";
+@import "helpers/sizes.scss";
 
 
 // ionic-material
@@ -109,6 +121,15 @@ input:-ms-input-placeholder {
 .bar.bar-header.positive-bg > p{
     font-weight: normal !important;
     color: #fff !important;
+}
+
+.bar.bar-header.calm-bg > h1,
+.bar.bar-header.calm-bg > h2,
+.bar.bar-header.calm-bg > h3,
+.bar.bar-header.calm-bg > h4,
+.bar.bar-header.calm-bg > p{
+    font-weight: normal !important;
+    color: #2db051 !important;
 }
 
 input {

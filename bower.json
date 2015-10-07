@@ -9,6 +9,7 @@
     "angular-translate-loader-static-files": "~2.7.2",
     "angularjs-toaster": "~0.4.13",
     "me.tomsen.router": "https://github.com/etomsen/router.git",
+    "me.tomsen.ionicTopMenu": "https://github.com/etomsen/ionicTopMenu.git",
     "angular-leaflet-directive": "~0.8.8",
     "ngCordova": "~0.1.20-alpha"
   },
