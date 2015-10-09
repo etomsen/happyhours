@@ -148,7 +148,7 @@
 	     		});
 		};
 
-		$scope.data = {};
+		$scope.data = {mode: 'map'};
 
 		$scope.$on('$ionicView.afterEnter', function(){
 			$timeout(function(){$scope.data.actionButtonOn = 'on';}, 1000);
@@ -158,6 +158,16 @@
 			initMap();
 			$scope.doRefresh();
 		});
+
+		$scope.toggleMode = function() {
+			delete $scope.data.actionButtonOn;
+			if ($scope.data.mode === 'map') {
+				$scope.data.mode = 'list';
+			} else {
+				$scope.data.mode = 'map';
+			}
+			$timeout(function(){$scope.data.actionButtonOn = 'on';}, 500);
+		};
 
 	}
 }(L));

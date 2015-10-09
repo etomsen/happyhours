@@ -1,5 +1,9 @@
-<ion-view title="Map">
-	<ion-content data-tap-disabled="true" style="min-height: 100%; height: 100%;" scroll="false">
-    	<div id="happyhours_map" style="height: 100%; width: 100%;"></div>
+<ion-view title="{{data.mode==='map'? 'Map' : 'List'}}">
+	<button ng-click="toggleMode()" class="button button-fab button-fab-bottom-right button-positive spin" ng-class="{'on': data.actionButtonOn}"><i class="icon" ng-class="{'ion-map': data.mode === 'map', 'ion-navicon-round': data.mode === 'list'}"></i></button>
+	<ion-content ng-show="data.mode === 'map'" data-tap-disabled="true" style="position: relative; min-height: 100%; height: 100%;" scroll="false">
+    	<div id="happyhours_map" style="position: relative; height: 100%; width: 100%;"></div>
+  	</ion-content>
+  	<ion-content ng-show="data.mode === 'list'" data-tap-disabled="true" style="position: relative; min-height: 100%; height: 100%;" scroll="false">
+    	<div id="happyhours_map" style="position: relative; height: 100%; width: 100%;"></div>
   	</ion-content>
 </ion-view>
