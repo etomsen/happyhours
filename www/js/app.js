@@ -2,7 +2,7 @@
     'use strict';
     angular
         .module('happyhours', ['ionic', 'ionic.service.core', 'ionic.service.deploy', 'pascalprecht.translate',
-            'leaflet-directive', 'ngCordova', 'me.tomsen.ionicTopMenu',
+            'ngCordova', 'me.tomsen.ionicTopMenu',
             'happyhours.intro', 'happyhours.main'])
         .run(run)
         .config(configure);

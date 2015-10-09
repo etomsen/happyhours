@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
+    <title>HappyHours.by</title>
      <!-- bower:css -->
      <link rel="stylesheet" href="lib/angularjs-toaster/toaster.css"/>
      <link rel="stylesheet" href="lib/me.tomsen.ionicTopMenu/topmenu.css"/>
-     <link rel="stylesheet" href="lib/leaflet/dist/leaflet.css"/>
+     <link rel="stylesheet" href="lib/mapbox.js/mapbox.css"/>
      <!-- endbower -->
     <!-- inject:css -->
     <link rel="stylesheet" href="modules/intro/intro.css">
@@ -38,10 +38,15 @@
     <script src="lib/me.tomsen.ionicTopMenu/topmenu.service.js"></script>
     <script src="lib/me.tomsen.ionicTopMenu/topmenu.directive.js"></script>
     <script src="lib/me.tomsen.ionicTopMenu/topmenu-content.directive.js"></script>
-    <script src="lib/angular-simple-logger/dist/angular-simple-logger.js"></script>
-    <script src="lib/leaflet/dist/leaflet-src.js"></script>
-    <script src="lib/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
     <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="lib/mapbox.js/mapbox.js"></script>
+    <script src="lib/leaflet.markercluster/src/MarkerCluster.js"></script>
+    <script src="lib/leaflet.markercluster/src/MarkerClusterGroup.js"></script>
+    <script src="lib/leaflet.markercluster/src/DistanceGrid.js"></script>
+    <script src="lib/leaflet.markercluster/src/MarkerCluster.QuickHull.js"></script>
+    <script src="lib/leaflet.markercluster/src/MarkerCluster.Spiderfier.js"></script>
+    <script src="lib/moment/moment.js"></script>
+    <script src="lib/angular-moment/angular-moment.js"></script>
     <!-- endbower -->
 
     <!-- inject:js -->
@@ -49,6 +54,7 @@
     <script src="modules/main/main.route.js"></script>
     <script src="modules/main/main.map.ctrl.js"></script>
     <script src="modules/main/main.ctrl.js"></script>
+    <script src="modules/main/happyhours.factory.js"></script>
     <script src="modules/intro/intro.module.js"></script>
     <script src="modules/intro/intro.route.js"></script>
     <script src="modules/intro/intro.ctrl.js"></script>

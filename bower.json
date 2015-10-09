@@ -10,16 +10,27 @@
     "angularjs-toaster": "~0.4.13",
     "me.tomsen.router": "https://github.com/etomsen/router.git",
     "me.tomsen.ionicTopMenu": "https://github.com/etomsen/ionicTopMenu.git",
-    "angular-leaflet-directive": "~0.8.8",
-    "ngCordova": "~0.1.20-alpha"
-  },
-  "overrides": {
-    "ionic": {
-      "main": [
-        "release/fonts/*",
-        "release/js/ionic.js",
-        "release/js/ionic-angular.js"
-      ]
+    "ngCordova": "~0.1.20-alpha",
+    "mapbox.js": "~2.2.1",
+    "leaflet.markercluster": "~0.4.0",
+    "angular-moment": "~0.10.3"
+    },
+    "overrides": {
+        "ionic": {
+            "main": [
+                "release/fonts/*",
+                "release/js/ionic.js",
+                "release/js/ionic-angular.js"
+            ]
+        },
+        "leaflet.markercluster": {
+            "main": [
+                "src/MarkerCluster.js",
+                "src/MarkerClusterGroup.js",
+                "src/DistanceGrid.js",
+                "src/MarkerCluster.QuickHull.js",
+                "src/MarkerCluster.Spiderfier.js"
+            ]
+        }
     }
-  }
 }

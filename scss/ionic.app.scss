@@ -20,7 +20,7 @@ $primary-text: #212121;
 $secondary-text: #727272;
 $divider: #B6B6B6;
 $calm:  #f8f8f8 !default;
-$positive: #2db051 !default;
+$positive: #2DB051 !default;
 $divider: #B6B6B6;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
@@ -173,3 +173,230 @@ input[type="text"]:read-only {
     text-transform: uppercase;
 }
 
+
+/* mapbox Cluster */
+.marker-cluster-small {
+    background-color: rgba(181, 226, 140, 0.6);
+}
+
+.marker-cluster-small div {
+    background-color: rgba(110, 204, 57, 0.6);
+}
+
+.marker-cluster-medium {
+    background-color: rgba(241, 211, 87, 0.6);
+}
+
+.marker-cluster-medium div {
+    background-color: rgba(240, 194, 12, 0.6);
+}
+
+.marker-cluster-large {
+    background-color: rgba(253, 156, 115, 0.6);
+}
+
+.marker-cluster-large div {
+    background-color: rgba(241, 128, 23, 0.6);
+}
+
+/* IE 6-8 fallback colors */
+.leaflet-oldie .marker-cluster-small {
+    background-color: rgb(181, 226, 140);
+}
+
+.leaflet-oldie .marker-cluster-small div {
+    background-color: rgb(110, 204, 57);
+}
+
+.leaflet-oldie .marker-cluster-medium {
+    background-color: rgb(241, 211, 87);
+}
+
+.leaflet-oldie .marker-cluster-medium div {
+    background-color: rgb(240, 194, 12);
+}
+
+.leaflet-oldie .marker-cluster-large {
+    background-color: rgb(253, 156, 115);
+}
+
+.leaflet-oldie .marker-cluster-large div {
+    background-color: rgb(241, 128, 23);
+}
+
+.marker-cluster {
+    background-clip: padding-box;
+    border-radius: 20px;
+}
+
+.marker-cluster div {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+
+    text-align: center;
+    border-radius: 15px;
+    font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.marker-cluster span {
+    line-height: 30px;
+}
+
+.leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
+    -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
+    -moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;
+    -o-transition: -o-transform 0.3s ease-out, opacity 0.3s ease-in;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-in;
+}
+
+.leaflet-control-locate .leaflet-bar-part {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+}
+
+.leaflet-bar-part .glyphicon {
+    font-size: 14px;
+    position: relative;
+    left: 5px;
+    top: 1px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.leaflet-bar-part .glyphicon.grey {
+    opacity: 0.6;
+}
+
+.leaflet-control-locate.active.following a .glyphicon {
+    color: $positive;
+}
+
+.leaflet-popup {
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 4px;
+}
+
+.leaflet-marker-icon {
+    width: 40px !important;
+    height: 40px !important;
+    margin-left: -20px !important;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.leaflet-marker-icon.marker-cluster {
+    background-color: #ffffff;
+}
+
+.leaflet-marker-icon > div {
+    color: #ffffff;
+    background-color: $positive;
+    font-weight: bold;
+}
+
+.leaflet-marker-icon.default {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 15px;
+    background-color: $positive;
+}
+
+.leaflet-marker-icon.dinner {
+    background-image: url('../img/dinner-i.png');
+}
+
+.leaflet-marker-icon.pizza {
+    background-image: url('../img/pizza-i.png');
+}
+
+.leaflet-marker-icon.take-away {
+    background-image: url('../img/take-away-i.png');
+    background-size: 90%;
+}
+
+.leaflet-marker-icon.beer {
+    background-image: url('../img/beer-i.png');
+    background-size: 85%;
+}
+
+.leaflet-marker-icon.soda {
+    background-image: url('../img/soda-i.png');
+    background-size: 80%;
+}
+
+.leaflet-marker-icon.cocktail {
+    background-image: url('../img/cocktail-i.png');
+    background-size: 85%;
+}
+
+.leaflet-marker-icon.shooter {
+    background-image: url('../img/shooter-i.png');
+}
+
+.leaflet-marker-icon.wine {
+    background-image: url('../img/wine-i.png');
+    background-size: 65%;
+}
+
+.leaflet-marker-icon.shooter {
+    background-image: url('../img/shooter-i.png');
+}
+
+.leaflet-marker-icon.coffee {
+    background-image: url('../img/coffee-i.png');
+}
+
+.leaflet-marker-icon.rocks {
+    background-image: url('../img/rocks-i.png');
+    background-size: 85%;
+}
+
+.leaflet-marker-icon.sushi {
+    background-image: url('../img/sushi-i.png');
+}
+
+.leaflet-marker-icon.burger {
+    background-image: url('../img/burger-i.png');
+}
+
+.leaflet-marker-icon.fish {
+    background-image: url('../img/fish-i.png');
+}
+
+.leaflet-marker-icon.cake {
+    background-image: url('../img/cake-i.png');
+    background-size: 80%;
+}
+
+.leaflet-marker-icon.happybirthday {
+    background-image: url('../img/happybirthday-i.png');
+    background-size: 100%;
+}
+.leaflet-marker-icon.shisha {
+    background-image: url('../img/shisha-i.png');
+    background-size: 100%;
+}
+.leaflet-marker-icon.coffee-ta {
+    background-image: url('../img/coffee-ta-i.png');
+    background-size: 65%;
+}
+.leaflet-marker-icon.sandwich {
+    background-image: url('../img/sandwich-i.png');
+    background-size: 100%;
+}
+
+select.form-control.weekday {
+    border-color: $positive;
+    color: $positive;
+    font-weight: bold;
+    padding: 3px 10px;
+}
